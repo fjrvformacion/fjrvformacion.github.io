@@ -38,30 +38,64 @@
 <body>
 	<div class="container text-center">
 		<div class="row">
-            <div class="mx-auto text-primary">
-                <ul class="event-list">
-                <li>
-                    <time datetime="2014-07-20">
-                        <span class="day" id="day"></span>
-                        <span class="month" id="month"></span>
-                        <span class="year" id="year"></span>
-                    </time>
-                    <img alt="Independence Day" src="avatar.PNG" onclick="window.open('https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin', '_blank');" />
-                    <div class="info">
-                        <h2 class="title">Francisco Javier Ruano Vázquez</h2>
-                        <p class="desc">Grado en Ingeniería Informática</p>
-                        <p class="desc">Postgrado Master en Ingeniería y Tecnología del Software</p>
-                        <p class="desc">Ingeniero Técnico en Informática de Gestión</p>
-                        <p class="desc">Trinity College London - ISE II (B2) Inglés</p>
-                    </div>
-                    <div class="social">
-                        <ul>
-                            <li class="facebook" style="width:33%;"><a href="https://www.linkedin.com/in/fcojavierruano" target="_blank"><span class="fab fa-linkedin"></span></a></li>
+            <div class="col">
+                <div class="mx-auto text-primary">
+                    <ul class="event-list">
+                    <li>
+                        <time datetime="2014-07-20">
+                            <span class="day" id="day"></span>
+                            <span class="month" id="month"></span>
+                            <span class="year" id="year"></span>
+                        </time>
+                        <img alt="Independence Day" src="avatar.PNG" onclick="window.open('https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin', '_blank');" />
+                        <div class="info">
+                            <h2 class="title">Francisco Javier Ruano Vázquez</h2>
+                            <p class="desc">Grado en Ingeniería Informática</p>
+                            <p class="desc">Postgrado Master en Ingeniería y Tecnología del Software</p>
+                            <p class="desc">Ingeniero Técnico en Informática de Gestión</p>
+                            <p class="desc">Trinity College London - ISE II (B2) Inglés</p>
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li class="facebook" style="width:33%;"><a href="https://www.linkedin.com/in/fcojavierruano" target="_blank"><span class="fab fa-linkedin"></span></a></li>
+                                <li>
+                                        <a href="#" id="pop">
+                                                <span class="fas fa-table"></span></a>
+                                            </a>
+                                            
+                                            <!-- Creates the bootstrap modal where the image will appear -->
+                                            <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="HORARIO.jpg" class="enlargeImageModalSource" style="width: 100%;" >
+                                                </div>
+                                                
+                                                </div>
+                                            </div>
+                                            </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                    <div class="mx-auto text-primary">
+                        <ul class="event-list">
+                        <li>
+                            <div class="info">
+                                <p class="desc">C.D.P. Altair (2007-2018)</p>
+                                <p class="desc">IES Ciudad Jardín (2018-2019)</p>
+                            </div>
+                        </li>
                         </ul>
                     </div>
-                </li>
-                </ul>
-            </div>
+                </div>
         </div>
         <!--<div class="row" style="margin-top: 30px">
             <div class="col">
@@ -139,6 +173,13 @@
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.3.1.slim.min.js"></script>
 	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        $("#pop").on("click", function() {
+        $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+		$('#enlargeImageModal').modal('show');
+        });
+    </script>
 </body>
 </html>
