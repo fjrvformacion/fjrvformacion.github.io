@@ -33,19 +33,19 @@
 	}
 	.event-list > li > time > .day {
 		display: block;
-		font-size: 56pt;
+		font-size: 42pt;
 		font-weight: 100;
 		line-height: 1;
 	}
 	.event-list > li time > .month {
 		display: block;
-		font-size: 24pt;
+		font-size: 14pt;
 		font-weight: 900;
 		line-height: 1;
 	}
 	.event-list > li time > .year {
 		display: block;
-		font-size: 24pt;
+		font-size: 18pt;
 		font-weight: 900;
 		line-height: 1;
 	}
@@ -57,12 +57,12 @@
 		text-align: center;
 	}
 	.event-list > li > .info > .title {
-		font-size: 17pt;
+		font-size: 14pt;
 		font-weight: 700;
 		margin: 0px;
 	}
 	.event-list > li > .info > .desc {
-		font-size: 12pt;
+		font-size: 10pt;
 		font-weight: 200;
 		margin: 0px;
 	}
@@ -192,4 +192,14 @@
 			width: 40px;
 			padding: 10px 0px 9px;
 		}
+	}
+	#days, #hours, #minutes {
+		display: inline;
+		font-size: 18pt;
+		font-weight: 100;
+		line-height: 1;
+		color: white;
+	}
+	.horario {
+		font-size: 14pt;
 	}

@@ -28,6 +28,40 @@
             document.getElementById("day").innerHTML = dd;
             document.getElementById("month").innerHTML = months[mm];
             document.getElementById("year").innerHTML = yyyy; 
+			
+			
+			var d = new Date();
+			var n = d.getDay();
+			
+			lunes = new Array("HORARIO: ","1º.GUARD ","2º.GUARD ","3º.IAW ","4º.AW ","5º.LM ","6º.LM");
+			martes = new Array("HORARIO: ","4º.BD ","5º.AW ","6º.IAW");
+			miercoles = new Array("HORARIO: ","5º.SR ","6º.SR");
+			jueves = new Array("HORARIO: ","1º.LM ","2º.LM ","3º.AW ","4º.AW ","5º.GUARD ","6º.PREV");
+			viernes = new Array("HORARIO: ","3º.IAW ","4º.IAW ","5º.BD ","6º.BD");
+			
+			var hhh = "";
+			switch(n){
+				case 1:
+					hhh = lunes.toString();
+					break;
+				case 2:
+					hhh = martes.toString();
+					break;
+				case 3:
+					hhh = miercoles.toString();
+					break;
+				case 4:
+					hhh = jueves.toString();
+					break;
+				case 5:
+					hhh = viernes.toString();
+					break;
+			}
+			
+			
+			hhh = hhh.replace(/,/g, ' ');
+			
+			document.getElementById("horario").innerHTML = hhh;
         } 
         
         document.addEventListener("DOMContentLoaded", load, false);
@@ -46,6 +80,7 @@
                             <span class="day" id="day"></span>
                             <span class="month" id="month"></span>
                             <span class="year" id="year"></span>
+							<span id="days"></span>D <span id="hours"></span>H <span id="minutes"></span>M
                         </time>
                         <img alt="Independence Day" src="avatar.PNG" onclick="window.open('https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin', '_blank');" />
                         <div class="info">
@@ -85,23 +120,31 @@
                 </div>
             </div>
             <div class="col-md-auto">
-                    <div class="mx-auto text-primary">
-                        <ul class="event-list">
-                        <li>
-                            <div class="info">
-                                <p class="desc">C.D.P. Altair (2007-2018)</p>
-                                <p class="desc">IES Ciudad Jardín (2018-2019)</p>
-                            </div>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-        </div>
-        <!--<div class="row" style="margin-top: 30px">
-            <div class="col">
-				<a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn-block btn btn-success btn-lg btn-huge" target="_blank"><span class="glyphicon glyphicon-download-alt"></span> CORREO GMAIL</a>
+				<div class="mx-auto text-primary">
+					<ul class="event-list">
+					<li>
+						<div class="info">
+							<p class="desc">C.D.P. Altair (2007-2018)</p>
+							<p class="desc">IES Ciudad Jardín (2018-2019)</p>
+						</div>
+					</li>
+					</ul>
+				</div>
             </div>
-        </div>-->
+			
+        </div>
+		<div class="row">
+			<div class="col">
+				<div class="mx-auto text-primary">
+					<div class="alert alert-primary alert-dismissible fade show" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<span class="horario" id="horario"></span>
+					</div>
+                </div>
+            </div>
+		</div>
         <fieldset class="scheduler-border">
             <legend class="scheduler-border text-primary">Junta de Andalucía</legend>
 		<div class="row" style="margin-top: 30px">
@@ -174,6 +217,7 @@
 	<script src="js/jquery-3.3.1.slim.min.js"></script>
 	<script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/countdown.js"></script>
     
     <script>
         $("#pop").on("click", function() {
