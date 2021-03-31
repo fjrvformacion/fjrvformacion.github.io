@@ -33,11 +33,11 @@
 			var d = new Date();
 			var n = d.getDay();
 			
-			lunes = new Array("HORARIO: ","1º. () - ","2º. (PAR) - ","3º. (PAR) - ","RECRE. (GUARD) - ","4º. (TIC 1) - ","5º. (TIC ESO) - ","6º. (TIC 1)");
-			martes = new Array("HORARIO: ","1º. (IAW) - ","2º. (IAW) - ","3º. (TIC ESO) - ","4º. (GUARD) - ","5º. (LM) ","6º. (LM)",);
-			miercoles = new Array("HORARIO: ","1º. () - ","2º. () - ","3º. () - ","4º. () ","5º. (PAR) - ","6º. (TIC 1)");
-			jueves = new Array("HORARIO: ","1º. () - ","2º. () - ","3º. () - ","4º. () - ","5º. (IAW) ","6º. (IAW)");
-			viernes = new Array("HORARIO: ","1º. (LM) - ","2º. (LM) - ","3º. (TIC ESO) - ","RECRE. (GUARD) - ","4º. () - ","5º. (TIC 1) - ","6º. (GUARD BIBLIO) ");
+			lunes = new Array("LUNES: ","1º. - ","2º. PAR - ","3º. PAR - ","RECRE. GUARD - ","4º. TIC 1 - ","5º. TIC ESO - ","6º. TIC 1");
+			martes = new Array("MARTES: ","1º. - ","2º. - ","3º. TIC ESO - ","4º. GUARD - ","5º. LM - ","6º. LM");
+			miercoles = new Array("MIÉRCOLES: ","1º. - ","2º. FCT-PI - ","3º. FCT-PI - ","4º. DPTO - ","5º. PAR - ","6º. TIC 1");
+			jueves = new Array("JUEVES: ","1º. - ","2º. - ","3º. - ","4º. DPTO - ","5º. IAW - ","6º. IAW");
+			viernes = new Array("VIERNES: ","1º. LM - ","2º. LM - ","3º. TIC ESO - ","RECRE. GUARD - ","4º. DPTO - ","5º. TIC 1 - ","6º. GUARD BIBLIO");
 			
 			var hhh = "";
 			switch(n){
@@ -82,7 +82,7 @@
                             <span class="year" id="year"></span>
 							<span id="days"></span>D <span id="hours"></span>H <span id="minutes"></span>M
                         </time>
-                        <img alt="FJRV" src="avatar2.png" onclick="window.open('https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin', '_blank');" />
+                        <img alt="FJRV" src="yo.jpg" onclick="window.open('https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin', '_blank');" />
                         <div class="info">
                             <h2 class="title">Francisco Javier Ruano Vázquez</h2>
                             <p class="desc">Grado en Ingeniería Informática</p>
@@ -155,7 +155,7 @@
                 <a href="https://www.juntadeandalucia.es/educacion/portalseneca/web/seneca/inicio" class="btn-block btn btn-danger btn-lg btn-huge" target="_blank"> SÉNECA / PASEN</a>
             </div>
 	    <div class="col">
-                <a href="https://senecav2.ced.junta-andalucia.es/seneca/jsp/portal/" class="btn-block btn btn-danger btn-lg btn-huge" target="_blank"> SÉNECA / PASEN (NEW)</a>
+                <a href="https://www.juntadeandalucia.es/educacion/senecav2/seneca/jsp/portal/" class="btn-block btn btn-danger btn-lg btn-huge" target="_blank"> SÉNECA / PASEN (NEW)</a>
             </div>
             <div class="col">
                 <a href="https://www.juntadeandalucia.es/educacion/portaldocente/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> PORTAL DOCENTE</a>
@@ -166,11 +166,14 @@
             <div class="col">
                 <a href="https://www.juntadeandalucia.es/educacion/apl/dipa/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> DIPA</a>
             </div>
-	    <div class="col">
+	        <div class="col">
                 <a href="http://destinosceja.com/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> DESTINOS CEJA</a>
             </div>
             <div class="col">
-                <a href="http://www.juntadeandalucia.es/educacion/portals/web/ced" class="btn-block btn btn-warning btn-lg btn-huge" target="_blank"> JUNTA DE ANDALUCÍA</a>
+                <a href="http://www.juntadeandalucia.es/educacion/portals/web/ced" class="btn-block btn btn-warning btn-lg btn-huge" target="_blank"> JUNTA DE ANDALUCÍA - NOVEDADES</a>
+            </div>
+            <div class="col">
+                <a href="https://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza" class="btn-block btn btn-info btn-lg btn-huge" target="_blank"> JUNTA DE ANDALUCÍA - FP</a>
             </div>
         </div>
         </fieldset>
@@ -179,13 +182,31 @@
             <legend class="scheduler-border text-primary">Formación</legend>
         <div class="row" style="margin-top: 30px">
 			<div class="col">
-                <a href="https://classroom.google.com/?hl=es" class="btn-block btn btn-warning btn-lg btn-huge" target="_blank"> GOOGLE CLASSROOM</a>
+                <a href="https://classroom.google.com/?hl=es" class="btn-block btn btn-danger btn-lg btn-huge" target="_blank"> CLASSROOM</a>
+			</div>
+            <div class="col">
+                <a href="https://www.youtube.com/?gl=ES" class="btn-block btn btn-danger btn-lg btn-huge" target="_blank"> YOUTUBE</a>
+			</div>
+            <div class="col">
+                <a href="https://drive.google.com/?authuser=0" class="btn-block btn btn-danger btn-lg btn-huge" target="_blank"> DRIVE</a>
+			</div>
+            <div class="col">
+                <a href="https://meet.google.com/?hs=197&pli=1&authuser=0" class="btn-block btn btn-danger btn-lg btn-huge" target="_blank"> MEET</a>
+			</div>
+            <div class="col">
+                <a href="https://chat.google.com/" class="btn-block btn btn-danger btn-lg btn-huge" target="_blank"> CHAT</a>
 			</div>
             <div class="col">
                 <a href="https://educacionadistancia.juntadeandalucia.es/profesorado/" class="btn-block btn btn-warning btn-lg btn-huge" target="_blank"> AULA VIRTUAL A DISTANCIA</a>
 			</div>
             <div class="col">
                 <a href="http://www.juntadeandalucia.es/educacion/permanente/materiales/index.php" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> AULA EDUCACIÓN PERMANENTE</a>
+            </div>
+            <div class="col">
+                <a href="https://openwebinars.net/" class="btn-block btn btn-secondary btn-lg btn-huge" target="_blank"> OPENWEBINARS</a>
+            </div>
+            <div class="col">
+                <a href="https://awsacademy.instructure.com/login/canvas" class="btn-block btn btn-info btn-lg btn-huge" target="_blank"> AWS ACADEMY</a>
             </div>
         </div>	
         </fieldset>
@@ -197,13 +218,10 @@
                 <a href="http://www.juntadeandalucia.es/educacion/vscripts/centros/index.asp" class="btn-block btn btn-info btn-lg btn-huge" target="_blank"> CENTROS</a>
             </div>
             <div class="col">
-                <a href="http://www.juntadeandalucia.es/educacion/educasig/escolarizacion/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> EDUCASIG</a>
+                <a href="https://www.juntadeandalucia.es/educacion/educasig/escolarizacion/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> EDUCASIG</a>
             </div>
             <div class="col">
                 <a href="http://geo.iescdl.es/" class="btn-block btn btn-success btn-lg btn-huge" target="_blank"> CENTROS OPOSICIONES</a>
-            </div>
-	    <div class="col">
-                <a href="https://ftcerdan.carto.com/viz/23f59f60-6bf3-40d6-bfaa-bc3689fa501b/embed_map" class="btn-block btn btn-secondary btn-lg btn-huge" target="_blank"> MAPA IES</a>
             </div>
         </div>
         </fieldset>
@@ -213,13 +231,20 @@
         <div class="row text-left" style="margin-top: 30px">
             <div class="col">
                 <div class="list-group">
-                    <a class="list-group-item list-group-item-action flex-column align-items-start active text-white">
+                    <a class="list-group-item list-group-item-action flex-column align-items-start active text-white" href="https://gestion.iesmargaritasalas.org/" target="_blank">
                       <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">WEB GESTIÓN</h5>
+                        <h5 class="mb-1">WEB GESTIÓN IES MARGARITA SALAS</h5>
                         <small>Mayo, 2019</small>
                       </div>
                       <p class="mb-1">Web en PHP para el control integral de todos los aspectos del profesorado dentro del centro educativo</p>
                     </a>
+                    <a class="list-group-item list-group-item-action flex-column align-items-start" href="https://gestion.iestriana.com/" target="_blank">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">WEB GESTIÓN IES TRIANA</h5>
+                          <small>Mayo, 2021</small>
+                        </div>
+                        <p class="mb-1">Web en PHP para el control integral de todos los aspectos del profesorado dentro del centro educativo</p>
+                      </a>
                     <a class="list-group-item list-group-item-action flex-column align-items-start">
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">APP VIDA SALUDABLE</h5>
@@ -227,7 +252,7 @@
                       </div>
                       <p class="mb-1">APP Android para el control de las vueltas al centro que dan los alumnos durante el recreo. El profesor puede tener un listado de las vueltas de los alumnos para premiar el movimiento de los alumnos</p>
                     </a>
-                    <a class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a class="list-group-item list-group-item-action flex-column align-items-start" href="https://recicla.iesmargaritasalas.org/" target="_blank">
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">WEB y APP RECICLA</h5>
                         <small class="text-muted">Enero, 2020</small>
@@ -240,7 +265,7 @@
         </fieldset>
 
         <fieldset class="scheduler-border">
-            <legend class="scheduler-border text-primary">Personal</legend>
+            <legend class="scheduler-border text-primary">Apps y Webs</legend>
         <div class="row" style="margin-top: 30px">
 			<div class="col">
                 <a href="https://github.com/" class="btn-block btn btn-danger btn-lg btn-huge" target="_blank"> GITHUB</a>
@@ -308,6 +333,33 @@
 			<div class="col">
                 <a href="https://es.000webhost.com/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> 000webhost</a>
             </div>
+            <div class="col">
+                <a href="https://my.freenom.com/clientarea.php" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> Freenom</a>
+            </div>
+            <div class="col">
+                <a href="https://cp1.awardspace.net/login/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> Adaware Space</a>
+            </div>
+            <div class="col">
+                <a href="https://www.atube.me/es/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> aTube</a>
+            </div>
+            <div class="col">
+                <a href="http://www.gimp.org.es/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> Gimp</a>
+            </div>
+            <div class="col">
+                <a href="https://www.foxitsoftware.com/es-la/pdf-reader/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> Foxit Reader</a>
+            </div>
+            <div class="col">
+                <a href="https://launchpad.net/kazam" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> Kazam Screencaster</a>
+            </div>
+            <div class="col">
+                <a href="https://bitnami.com/stack/lamp" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> Bitnami Lamp</a>
+            </div>
+            <div class="col">
+                <a href="https://docs.docker.com/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> Docker</a>
+            </div>
+            <div class="col">
+                <a href="https://hub.docker.com/" class="btn-block btn btn-primary btn-lg btn-huge" target="_blank"> DockerHub</a>
+            </div>
         </div>
         </fieldset>
 		<fieldset class="scheduler-border">
@@ -320,6 +372,17 @@
 				</div>
 			</div>
         </fieldset>
+
+        <!-- Footer -->
+        <footer class="bg-white text-center text-lg-start">        
+            <!-- Copyright -->
+            <div class="text-center p-3" >
+            © 2021 Copyright:
+            <a class="text-dark" href="https://fjrvformacion.github.io/">Francisco Javier Ruano Vázquez</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
 	</div>
 
 	<!-- Optional JavaScript -->
