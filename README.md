@@ -22,7 +22,7 @@ Página de Formación
 <body>
 
     <header>
-        <h1>NOMAD LENS</h1>
+        <h1>NOMAD LEN</h1>
         <p>Capturando la esencia del mundo, un píxel a la vez.</p>
     </header>
 
